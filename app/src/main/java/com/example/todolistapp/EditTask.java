@@ -2,13 +2,17 @@ package com.example.todolistapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -57,7 +61,32 @@ public class EditTask extends AppCompatActivity {
     }
 
     private void showDeleteDialog() {
+        LayoutInflater inflater = LayoutInflater.from(this);
+        View view = inflater.inflate(R.layout.delete_dialog, null);
 
+        Button accDeleteBtn = view.findViewById(R.id.accDeleteBtn);
+        Button cancelBtnTask = view.findViewById(R.id.cancelBtnTask);
+
+
+        final AlertDialog alertDialog = new AlertDialog.Builder(this)
+                .setView(view)
+                .create();
+        alertDialog.show();
+
+        accDeleteBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(EditTask.this, MainActivity.class);
+                startActivity(i);
+                Toast.makeText(getApplicationContext(), "The task has successfully deleted!", Toast.LENGTH_LONG).show();
+            }
+        });
+        cancelBtnTask.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                alertDialog.dismiss();
+            }
+        });
     }
 
     private void showDateDialog(){
