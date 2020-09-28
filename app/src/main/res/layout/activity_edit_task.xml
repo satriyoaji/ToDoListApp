@@ -22,7 +22,7 @@
             android:layout_marginTop="40dp"
             android:fontFamily="@font/average_sans"
             android:textAlignment="center"
-            android:text="Add New Task"
+            android:text="Edit Task Details"
             android:textColor="#fff"
             android:textSize="27sp"
             android:textStyle="bold" />
@@ -48,10 +48,10 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/addtitle"
+                android:id="@+id/edittitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Add Title"
+                android:text="Edit Title"
                 android:layout_marginBottom="10dp"
                 android:textColor="#0A1458"
                 android:textSize="19sp" />
@@ -79,10 +79,10 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/adddesc"
+                android:id="@+id/editdesc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Add Description"
+                android:text="Edit Description"
                 android:layout_marginBottom="10dp"
                 android:textColor="#0A1458"
                 android:textSize="19sp" />
@@ -110,7 +110,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/adddate"
+                android:id="@+id/editdate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Target Date"
@@ -152,25 +152,24 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/createTaskBtn"
+        android:id="@+id/updateTaskBtn"
         android:layout_width="match_parent"
         android:layout_height="52dp"
         android:layout_marginHorizontal="17dp"
         android:layout_marginTop="22dp"
         android:background="@drawable/create_btn"
         android:fontFamily="sans-serif-medium"
-        android:text="Create Now"
+        android:text="Save Update"
         android:textColor="#FFF"
         android:textStyle="bold" />
     <Button
-        android:id="@+id/cancelBtn"
+        android:id="@+id/deleteTaskBtn"
         android:layout_marginHorizontal="17dp"
         android:layout_marginTop="16dp"
-        android:textColor="#AFAFAF"
+        android:textColor="#fff"
         android:textStyle="bold"
-        android:text="CANCEL"
-        android:background="@drawable/cancel_btn"
-        android:shadowColor="@color/lightBlue"
+        android:text="DELETE"
+        android:background="@drawable/delete_btn"
         android:layout_width="match_parent"
         android:layout_height="52dp"/>
 

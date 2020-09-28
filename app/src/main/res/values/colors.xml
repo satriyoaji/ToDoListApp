@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="solidGreen">#00FF00</color>
     <color name="lowGreen">#DDBFFFB3</color>
     <color name="calmGreen">#F7A7F74C</color>
     <color name="success">#37B83C</color>
@@ -9,8 +10,11 @@
     <color name="seaBlue">#18C0DD</color>
     <color name="primary">#1985DB</color>
     <color name="darkPrimary">#142BA2</color>
-    <color name="accent">#D81B60</color>
     <color name="tosca">#AB25FFC1</color>
     <color name="darkTosca">#F513BB99</color>
     <color name="lowCyan">#DDCEFCE3</color>
+    <color name="accent">#D81B60</color>
+    <color name="solidRed">#FF0000</color>
+    <color name="danger">#EC0A0A</color>
+    <color name="bloodColor">#F5D80911</color>
 </resources>

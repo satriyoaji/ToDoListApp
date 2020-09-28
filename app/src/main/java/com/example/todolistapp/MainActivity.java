@@ -12,12 +12,11 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    TextView titledoes, descdoes, datedoes;
-    Button newListBtn;
-
-    RecyclerView ourlist;
-    ArrayList<ToDoList> lists;
-    ToDoListAdapter adapter;
+    private TextView titledoes, descdoes, datedoes;
+    private Button newListBtn;
+    private RecyclerView ourlist;
+    private ArrayList<ToDoList> lists;
+    private ToDoListAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

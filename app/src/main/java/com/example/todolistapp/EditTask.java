@@ -3,53 +3,47 @@ package com.example.todolistapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
-import java.text.SimpleDateFormat;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.TextView;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-public class NewTask extends AppCompatActivity {
+public class EditTask extends AppCompatActivity {
 
     private DatePickerDialog datePickerDialog;
     private SimpleDateFormat dateFormatter;
     private EditText titleTask, descTask, dateTask;
     private ImageButton datePickerBtn;
-    private Button createTaskBtn, cancelBtn;
+    private Button updateTaskBtn, deleteTaskBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_new_task);
+        setContentView(R.layout.activity_edit_task);
 
         titleTask = findViewById(R.id.titleTask);
         descTask = findViewById(R.id.descTask);
         dateTask = findViewById(R.id.dateTask);
         dateTask.setKeyListener(null);
         datePickerBtn = findViewById(R.id.datePickerBtn);
-        createTaskBtn = findViewById(R.id.createTaskBtn);
-        cancelBtn = findViewById(R.id.cancelBtn);
+        updateTaskBtn = findViewById(R.id.updateTaskBtn);
+        deleteTaskBtn = findViewById(R.id.deleteTaskBtn);
 
-        createTaskBtn.setOnClickListener(new View.OnClickListener() {
+        //get Value from selected task
+        titleTask.setText(getIntent().getStringExtra("titleTask"));
+        descTask.setText(getIntent().getStringExtra("descTask"));
+        dateTask.setText(getIntent().getStringExtra("dateTask"));
+
+        deleteTaskBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-            }
-        });
-
-        cancelBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(NewTask.this, MainActivity.class);
-                startActivity(i);
+                showDeleteDialog();
             }
         });
 
@@ -60,6 +54,10 @@ public class NewTask extends AppCompatActivity {
                 showDateDialog();
             }
         });
+    }
+
+    private void showDeleteDialog() {
+
     }
 
     private void showDateDialog(){
