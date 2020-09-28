@@ -64,43 +64,46 @@
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_marginTop="-25dp"
+        android:layout_marginTop="-22dp"
+        android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="40dp">
 
-        <EditText
-            android:id="@+id/editText3"
-            android:layout_width="154dp"
-            android:layout_height="38dp"
+        <SearchView
+            android:id="@+id/searchTask"
+            android:paddingHorizontal="5dp"
+            android:layout_width="204dp"
+            android:layout_height="match_parent"
             android:background="@drawable/searchbar_rounded"
             android:backgroundTint="#fff"
             android:backgroundTintMode="src_in"
             android:inputType="text"
-            android:hint="Search..."
+            android:queryHint="search..."
             android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="4dp" />
+            app:layout_constraintStart_toStartOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <LinearLayout
-        android:orientation="vertical"
+
+    <!--        <androidx.recyclerview.widget.RecyclerView-->
+    <!--            android:id="@+id/ourlist"-->
+    <!--            android:scrollbars="vertical"-->
+    <!--            android:layout_marginTop="25dp"-->
+    <!--            android:layout_marginRight="20dp"-->
+    <!--            android:layout_marginLeft="20dp"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content" />-->
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-<!--        <androidx.recyclerview.widget.RecyclerView-->
-<!--            android:id="@+id/ourlist"-->
-<!--            android:scrollbars="vertical"-->
-<!--            android:layout_marginTop="25dp"-->
-<!--            android:layout_marginRight="20dp"-->
-<!--            android:layout_marginLeft="20dp"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content" />-->
-
-        <ScrollView
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginHorizontal="5dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <LinearLayout
                 android:background="@drawable/rounded_list_card"
@@ -123,14 +126,14 @@
                         android:layout_height="wrap_content"
                         android:text="Buy something"
                         android:textColor="#0A1458"
-                        android:textSize="22sp" />
+                        android:textSize="20sp" />
 
                     <TextView
                         android:id="@+id/datedoes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="20 Jun 2020"
+                        android:text="30 Sep 2020"
                         android:textColor="#F2888888"
                         android:textSize="16sp" />
 
@@ -152,19 +155,73 @@
 
                 </LinearLayout>
             </LinearLayout>
-        </ScrollView>
 
-        <TextView
-            android:id="@+id/endpage"
-            android:textSize="16sp"
-            android:textColor="#9A9A9A"
-            android:layout_marginTop="30dp"
-            android:textAlignment="center"
-            android:text="No more list"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+<!--            <LinearLayout-->
+<!--                android:background="@drawable/rounded_list_card"-->
+<!--                android:layout_margin="15dp"-->
+<!--                android:paddingBottom="10dp"-->
+<!--                android:paddingTop="10dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="horizontal" >-->
 
-    </LinearLayout>
+<!--                <LinearLayout-->
+<!--                    android:layout_width="260dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="16dp"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/titledoes"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Study in a midnight"-->
+<!--                        android:textColor="#0A1458"-->
+<!--                        android:textSize="20sp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/datedoes"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:text="22 Aug 2020"-->
+<!--                        android:textColor="#F2888888"-->
+<!--                        android:textSize="16sp" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_marginLeft="50dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content" >-->
+
+<!--                    <CheckBox-->
+<!--                        android:id="@+id/checkdoes"-->
+<!--                        android:scaleX="1.20"-->
+<!--                        android:scaleY="1.20"-->
+<!--                        android:checked="true"-->
+<!--                        android:buttonTint="@color/calmGreen"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content" />-->
+
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/endpage"
+        android:textSize="16sp"
+        android:textColor="#9A9A9A"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:text="No more list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
 
 
 </LinearLayout>

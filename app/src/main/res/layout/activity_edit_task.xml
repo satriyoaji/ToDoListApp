@@ -63,8 +63,8 @@
                 android:paddingLeft="7dp"
                 android:textColorHint="#B8A3A3"
                 android:textColor="#000"
-                android:maxLength="35"
-                android:hint="What will you do?"
+                android:maxLength="30"
+                android:text="Buy something"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"/>
 
@@ -95,7 +95,7 @@
                 android:textColorHint="#B8A3A3"
                 android:textColor="#000"
                 android:maxLength="90"
-                android:hint="How will you do that?"
+                android:text="Go to supermarket first"
                 android:layout_width="match_parent"
                 android:layout_height="62dp"/>
 
@@ -127,7 +127,7 @@
                     android:layout_width="260dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/input_field_task"
-                    android:hint="When will?"
+                    android:text="2020-10-15"
                     android:inputType="date"
                     android:paddingLeft="7dp"
                     android:textColor="#000"
