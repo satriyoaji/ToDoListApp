@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorSuccess">#37B83C</color>
-    <color name="colorSuccessDark">#168371</color>
-    <color name="colorLightBlue">#7DBBEE</color>
-    <color name="colorPrimary">#1985DB</color>
-    <color name="colorPrimaryDark">#102281</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="lowGreen">#DDBFFFB3</color>
+    <color name="calmGreen">#F7A7F74C</color>
+    <color name="success">#37B83C</color>
+    <color name="successDark">#168371</color>
+    <color name="lightBlue">#7DBBEE</color>
+    <color name="darkBlue">#2C72A7</color>
+    <color name="seaBlue">#18C0DD</color>
+    <color name="primary">#1985DB</color>
+    <color name="darkPrimary">#142BA2</color>
+    <color name="accent">#D81B60</color>
+    <color name="tosca">#AB25FFC1</color>
+    <color name="darkTosca">#F513BB99</color>
+    <color name="lowCyan">#DDCEFCE3</color>
 </resources>

@@ -2,6 +2,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
+    android:layout_marginBottom="18dp"
     android:background="#fff"
     android:layout_width="match_parent"
     android:layout_height="100dp">
@@ -18,7 +19,6 @@
             android:textSize="22sp"
             android:textColor="#0A1458"
             android:text="Buy something"
-            android:textAlignment="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -28,27 +28,26 @@
             android:textSize="17sp"
             android:textColor="#F2888888"
             android:text="Go to supermarket first"
-            android:textAlignment="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginLeft="75dp"
+        android:layout_marginLeft="45dp"
         android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
 
         <TextView
-            android:id="@+id/datedoes"
-            android:textSize="18sp"
-            android:textColor="#F7EE5F52"
-            android:layout_marginTop="8dp"
-            android:text="Tomorrow"
-            android:textAlignment="center"
+            android:id="@+id/prioritydoes"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:text="High priority"
+            android:textColor="#F7EE5F52"
+            android:textSize="18sp" />
 
     </LinearLayout>
 
